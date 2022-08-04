@@ -1,0 +1,22 @@
+.dashboard {
+  align-self: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.dashboard .x {
+  color: red;
+}
+.dashboard .o {
+  color: blue;
+}
+.dashboard .active {
+  border: 5px solid #ff9a8b;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.dashboard .inactive {
+  border: 5px solid transparent;
+  padding: 1rem;
+}/*# sourceMappingURL=scoreboard.css.map */

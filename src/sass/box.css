@@ -1,0 +1,20 @@
+.box {
+  border: none;
+  font-size: 8rem;
+  border-radius: 5%;
+  cursor: pointer;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s;
+}
+.box:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.5);
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}/*# sourceMappingURL=box.css.map */

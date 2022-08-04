@@ -1,0 +1,22 @@
+.game {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "dash dash dash" "box1 box2 box3" "box4 box5 box6" "box7 box8 box9" ". btn .";
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+.game > * {
+  background-color: white;
+  padding: 1rem;
+}
+.game .dashboard {
+  grid-area: dash;
+}
+.game .btn-reset {
+  grid-area: btn;
+}/*# sourceMappingURL=game.css.map */

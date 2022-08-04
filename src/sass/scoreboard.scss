@@ -1,0 +1,23 @@
+.dashboard {
+  align-self: center;
+  border-radius: 5px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  .x {
+    color: red;
+  }
+  .o {
+    color: blue;
+  }
+  .active {
+    border: 5px solid #ff9a8b;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  .inactive {
+    border: 5px solid transparent;
+    padding: 1rem;
+  }
+}
