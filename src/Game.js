@@ -24,6 +24,24 @@ function Game() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [gameover, setGameover] = useState(false);
 
+  // check winner
+  const checkWinner = (board) => {
+    for (let i = 0; i < WIN_CONDITIONS.length; i++) {
+      const [x, y, z] = WIN_CONDITIONS[i];
+
+      if (board[x] && board[x] === board[y] && board[y] === board[z]) {
+        setGameover(true);
+        return board[x];
+      }
+    }
+  };
+
+  //reset board
+  const resetBoard = () => {
+    setGameover(false);
+    setBoard(Array(9).fill(null));
+  };
+
   const hanldeBoxClick = (boxIndex) => {
     //step 1 update board
     const updateBoard = board.map((val, index) => {
@@ -47,24 +65,6 @@ function Game() {
     }
     // step 3 change active player
     setXplaying(!xplaying);
-  };
-
-  // check winner
-  const checkWinner = (board) => {
-    for (let i = 0; i < WIN_CONDITIONS.length; i++) {
-      const [x, y, z] = WIN_CONDITIONS[i];
-
-      if (board[x] && board[x] === board[y] && board[y] === board[z]) {
-        setGameover(true);
-        return board[x];
-      }
-    }
-  };
-
-  //reset board
-  const resetBoard = () => {
-    setGameover(false);
-    setBoard(Array(9).fill(null));
   };
 
   return (
