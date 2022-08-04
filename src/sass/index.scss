@@ -16,4 +16,7 @@ body {
     #ff6a88 55%,
     #ff99ac 100%
   );
+  @media (max-width: 768px) {
+    font-size: 50%;
+  }
 }

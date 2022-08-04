@@ -2,8 +2,15 @@
   align-self: center;
   border-radius: 5px;
   font-size: 2rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    font-size: 1rem !important;
+    padding: 1.5rem 0;
+  }
 }
 .dashboard .x {
   color: red;

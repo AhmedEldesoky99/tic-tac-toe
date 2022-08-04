@@ -3,8 +3,8 @@
   height: 100vh;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, minmax(6rem, 1fr));
+  grid-template-rows: repeat(5, minmax(6rem, 1fr));
   grid-template-areas:
     "dash dash dash"
     "box1 box2 box3"
@@ -16,12 +16,16 @@
   align-content: center;
   & > * {
     background-color: white;
-    padding: 1rem;
   }
   .dashboard {
     grid-area: dash;
   }
   .btn-reset {
     grid-area: btn;
+    padding: 1.5rem 0;
+    @media (max-width: 768px) {
+      justify-self: center;
+      padding: 1rem;
+    }
   }
 }
