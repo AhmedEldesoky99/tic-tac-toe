@@ -1,6 +1,5 @@
 import React from "react";
-//style
-import "../sass/scoreboard.css";
+
 export const ScoreBoard = ({ score, xplayer }) => {
   return (
     <div className="dashboard">

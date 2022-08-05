@@ -5,9 +5,6 @@ import { ScoreBoard } from "./components/scoreBoard";
 import { Board } from "./components/board";
 import { ResetBtn } from "./components/reset-btn";
 
-//import style
-import "./sass/game.css";
-
 function Game() {
   const WIN_CONDITIONS = [
     [0, 1, 2],
